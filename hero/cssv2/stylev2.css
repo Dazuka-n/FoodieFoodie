@@ -1,0 +1,340 @@
+body {
+  overflow-x: hidden;
+  background-image: url(../img/body-bg.jpg);
+  background-size: cover;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.heading_container h2 {
+  font-size: 2.5rem;
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: "bodoni svtytwo sc itc tt book", sans-serif;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.heading_container h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75px;
+  height: 5px;
+  background-color: #ff5a00;
+}
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.box-img {
+  width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+.hero_area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub_page .hero_area {
+  background-size: cover;
+  background-position: top;
+}
+
+.header_section {
+  padding: 12px 0;
+  background-image: url(../img/hero-bg.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: 10; /* Ensures it stays above other elements */
+}
+
+.custom_nav-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+background: none !important;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.navbar-brand span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.User_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 650px;
+  margin-right: 50px;
+}
+
+.User_option a {
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+.User_option .form-inline {
+  position: relative;
+  margin-left: 25px;
+}
+
+.User_option .form-inline input {
+  display: none;
+}
+
+.User_option .form-inline button {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Menu Button */
+.custom_menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.custom_menu-btn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.custom_menu-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden initially */
+    width: 300px;
+    height: 100vh;
+    background: #111;
+    color: white;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1100;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #ff4500;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Blurred Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+
+
+
+        .herog {
+            position: relative;
+            height: 100vh;
+            background: url('bg-image.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            transition: background 0.3s;
+        }
+        .navbar.scrolled {
+            background: rgba(10, 10, 50, 0.9);
+        }
+        .logo {
+            position: absolute;
+            width: 800px;
+            height: auto;
+        }
+.diginbtn {
+    display: grid;
+margin: 260px auto 0;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+.diginbtn:hover {
+    background-color: #FCA311 !important;
+    color: white !important;
+}
+
+        .circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .circle:hover {
+            transform: scale(1.05);
+        }
+        .circle img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .circle1 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            transition: transform 0.3s ease;
+        }
+        .circle1:hover {
+            transform: scale(1.05);
+        }
+        .circle1 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .circle2 {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            transition: transform 0.3s ease;
+        }
+        .circle2:hover {
+            transform: scale(1.05);
+        }
+        .circle2 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .circle3 {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            transition: transform 0.3s ease;
+        }
+        .circle3:hover {
+            transform: scale(1.05);
+        }
+        .circle3 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+.circle1:nth-child(2) { bottom: 47px; right: 80px; }
+.circle:nth-child(3) { bottom: 2px; left: 284px; }
+.circle:nth-child(4) { bottom: 454px; right: 226px; }
+.circle3:nth-child(5) { bottom: 284px; left: 85px; }
+.circle2:nth-child(6) { bottom: 2px; left: 792px; }
